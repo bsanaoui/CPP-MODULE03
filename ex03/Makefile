@@ -1,9 +1,9 @@
-NAME = ScavTrap
+NAME = DiaomondTrap
 
 CC = clang++
 FLAGS = -Werror -Wextra -Wall
 
-SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
+SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 
 all : $(NAME)
 
