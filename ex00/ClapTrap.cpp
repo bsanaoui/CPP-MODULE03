@@ -26,7 +26,8 @@ ClapTrap::ClapTrap(const ClapTrap &clap_trap)
 
 ClapTrap::ClapTrap( std::string name)
 {
-    std::cout << "ClapTrap <" << name << "> was created \U0001F468 !!" << std::endl;    this->_name = name;
+    std::cout << "ClapTrap <" << name << "> was created \U0001F468 !!" << std::endl;
+    this->_name = name;
     this->_hitPoints = 10;
     this->_energyPoints = 10;
     this->_attackDamage = 0;

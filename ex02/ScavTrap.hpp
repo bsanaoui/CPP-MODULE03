@@ -17,6 +17,7 @@ class ScavTrap : public ClapTrap
     std::string getName( void );
     // ------------------- Members Public functions ---------------- //
     void    guardGate( void );
+    void    attack( std::string const & target);
 
     // ------------------  Operator Overload ----------------------- //
                  //  ***** Assignement ********* //

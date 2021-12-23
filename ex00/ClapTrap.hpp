@@ -32,21 +32,8 @@ class ClapTrap
 
     // ------------------  Operator Overload ----------------------- //
             //  ***** Assignement ********* //
-    ClapTrap    &operator = (ClapTrap const &clap_trap) ;
+    ClapTrap    &operator = (ClapTrap const &clap_trap);
 
-            // ******* Comparison  ******** //
-    // bool    operator > (Fixed const &fixed) const;
- 
-
-            // *******  Arithmetic ********* //
-    // Fixed   operator + (Fixed const &fixed) const;
-
-
-           // ****** increment && Decriment ****//
-    // Fixed   operator ++ (); // Pre-Incr
-
-
-    // ------------------- Static functions ------------------------- //
 };
 
 #endif

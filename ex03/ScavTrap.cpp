@@ -45,6 +45,20 @@ void    ScavTrap::guardGate( void )
     std::cout << "ScavTrap <" << this->_name << "> have enterred in Gate keeper mode !" << std::endl;
 }
 
+void    ScavTrap::attack( std::string const & target)
+{
+    if (this->_energyPoints < this->_attackDamage)
+        std::cout << "ScavTrap <" << this->_name
+                << "> Does not have enough Energy Points To attack" << std::endl;
+    else
+    {
+        this->_energyPoints -= this->_attackDamage;
+        std::cout << "ScavTrap <" << this->_name << "> attack <" << target
+                << ">, causing " << this->_attackDamage
+                << " points of damage!" << std::endl;
+    }
+
+}
     // ------------------  Operator Overload ----------------------- //
                  //  ***** Assignement ********* //
 ScavTrap    &ScavTrap::operator = (ScavTrap const &scav_trap)

@@ -26,7 +26,7 @@ DiamondTrap::DiamondTrap(const DiamondTrap & daimond_trap)
     this->_attackDamage = daimond_trap._attackDamage;
 }
 
-DiamondTrap::DiamondTrap( std::string name) : ClapTrap(name + "_clap_name"), FragTrap(name), ScavTrap(name)
+DiamondTrap::DiamondTrap( std::string name) : ClapTrap(name + "_clap_name"), FragTrap(name + "_clap_name"), ScavTrap(name + "_clap_name")
 {
     std::cout << "DiamondTrap <" << name << "> was created \U0001F468 !!" << std::endl;
     this->_name = name;
